@@ -1,18 +1,20 @@
 <!DOCTYPE html> 
 <head>
     <title>Password Gen</title>
-    <link rel='stylesheet' href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-<body>
-    <h1>
+<body class="bg-blue-300">
+    <div class="flex justify-center text-xl"> <h1 class="item">
         Password Generator 
     </h1>
-    <button id="generate">Generate</button>
-    <p id="goesHere">Password goes here</p>
+</div>
+
+   <button id="generate" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400"> Generate</button>
+    <p>Password goes here ---> <span id="goesHere"></span></p>
 </body>
 </html>
